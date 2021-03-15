@@ -1,6 +1,7 @@
 {
     "files.associations": {
         "grafo.h": "c",
-        "menu.h": "c"
+        "menu.h": "c",
+        "stdio.h": "c"
     }
 }
