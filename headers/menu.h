@@ -1,0 +1,1 @@
+//void readFile(int *n, int *verticeOrigem, int *verticeDestino, float *peso);
