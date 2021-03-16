@@ -45,6 +45,14 @@ void graphShow(Graph grafo){
     
 }
 
-
-
-//Fazer função de liberar memoria utilizada
+int grauVertice(Graph grafo, int v){
+    link aux;
+    int count = 0;
+    for (int i = 0; i < grafo->n; i++){
+        for (aux = grafo->Apontador[i]; aux != NULL ; aux = aux->nextDestino){
+            if(aux->verticeDestino == v || i == v)
+                count++;   
+        }
+    }
+    return count;
+}

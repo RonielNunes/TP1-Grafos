@@ -8,13 +8,10 @@
 //https://www.geeksforgeeks.org/graph-and-its-representations/
 int main(int argc, char const *argv[])
 {  
-    int n;
+    int n,verticeOrigem, verticeDestino;
     Graph grafo;
-    int verticeOrigem;
-    int verticeDestino;
     float peso;
     char nomeArquivo[50],nomeArquivoSaida[50];
-
     FILE *arquivo = NULL,*arquivoSaida = NULL;
 
 
@@ -56,10 +53,14 @@ int main(int argc, char const *argv[])
         printf("Erro na abebertura do arquivo.\n");
     }
 
-    fprintf(arquivoSaida,"Orgem do grafo V(G): %d\n",n);
-    fprintf(arquivoSaida,"Tamanho do grafo E(G): %d\n",n);
-    fprintf(arquivoSaida,"Vizinhos do vertice %d:{x,3,x}\n",n);
-    fprintf(arquivoSaida,"Grau do vertice d(x%d): \n",n);
+    int ordem= n;
+    int tamanho = 0;
+    int v = 3;
+    int grau = grauVertice(grafo,v);
+    fprintf(arquivoSaida,"Orgem do grafo V(G): %d\n",ordem);
+    fprintf(arquivoSaida,"Tamanho do grafo E(G): %d\n",tamanho);
+    fprintf(arquivoSaida,"Vizinhos do vertice %d:{x,3,x}\n",0);
+    fprintf(arquivoSaida,"Grau do vertice d(%d): %d\n",v,grau);
 
     
 
