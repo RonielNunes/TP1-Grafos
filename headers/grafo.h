@@ -22,3 +22,4 @@ void graphShow(Graph grafo);
 void graphInsert(Graph grafo, int v, int destino, float peso);
 int grauVertice(Graph grafo, int v);
 void vizinhosVertice(Graph grafo, int vertice);
+int tamanhoGrafo(Graph grafo);

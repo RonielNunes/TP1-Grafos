@@ -1,4 +1,4 @@
-Orgem do grafo V(G): 5
-Tamanho do grafo E(G): 0
+Orgem do grafo V(G): 100
+Tamanho do grafo E(G): 419
 Vizinhos do vertice 3: 
-Grau do vertice d(3): 2
+Grau do vertice d(3): 3

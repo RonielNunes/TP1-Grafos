@@ -54,7 +54,7 @@ int main(int argc, char const *argv[])
     }
 
     int ordem= n;
-    int tamanho = 0;
+    int tamanho = tamanhoGrafo(grafo);
     int vertice = 3;
     int grau = grauVertice(grafo,vertice);
     
