@@ -1,19 +1,21 @@
 typedef struct node *link;
+
 struct node
 {
- int index;
- link next;
+    int verticeDestino;//index
+    float peso;
+    link nextDestino;
 };
+
 typedef struct graph *Graph;
 
-struct graph{
-    link *A;
-    int n;
-    int m;
+struct graph
+{
+    link *Apontador;
+    int n; //vertice
+    int m; //aresta
 };
 
 Graph graphInit(int n);
-void graphInsertArc(Graph G, int v, int w);
-void graphInsertArcNotSafe(Graph G, int v, int w);
-void graphShow(Graph G);
-void graphPrint(Graph G);
+void graphShow(Graph grafo);
+void graphInsert(Graph grafo, int v, int destino, float peso);
