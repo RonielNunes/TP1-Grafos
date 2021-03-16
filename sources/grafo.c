@@ -44,6 +44,23 @@ void graphShow(Graph grafo){
     }
     
 }
+void vizinhosVertice(Graph grafo, int vertice){
+    link aux;
+    printf("{");
+    for (int i = 0; i < grafo->n; i++)
+    {
+        for (aux = grafo->Apontador[i]; aux != NULL; aux = aux->nextDestino){
+            if (aux->verticeDestino == vertice)
+            {
+                printf("%d ",i);
+            }
+            if(i == vertice){
+                printf("%d ",aux->verticeDestino);
+            }
+        }
+    }
+    printf("}\n");
+}
 
 int grauVertice(Graph grafo, int v){
     link aux;

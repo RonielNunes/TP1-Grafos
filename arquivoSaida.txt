@@ -1,4 +1,4 @@
 Orgem do grafo V(G): 5
 Tamanho do grafo E(G): 0
-Vizinhos do vertice 0:{x,3,x}
-Grau do vertice d(x3): 2
+Vizinhos do vertice 3: 
+Grau do vertice d(3): 2

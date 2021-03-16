@@ -55,12 +55,15 @@ int main(int argc, char const *argv[])
 
     int ordem= n;
     int tamanho = 0;
-    int v = 3;
-    int grau = grauVertice(grafo,v);
+    int vertice = 3;
+    int grau = grauVertice(grafo,vertice);
+    
     fprintf(arquivoSaida,"Orgem do grafo V(G): %d\n",ordem);
     fprintf(arquivoSaida,"Tamanho do grafo E(G): %d\n",tamanho);
-    fprintf(arquivoSaida,"Vizinhos do vertice %d:{x,3,x}\n",0);
-    fprintf(arquivoSaida,"Grau do vertice d(%d): %d\n",v,grau);
+    fprintf(arquivoSaida,"Vizinhos do vertice %d: ",vertice);
+    vizinhosVertice(grafo,vertice);
+    fprintf(arquivoSaida,"\n");
+    fprintf(arquivoSaida,"Grau do vertice d(%d): %d\n",vertice,grau);
 
     
 
