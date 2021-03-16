@@ -13,8 +13,9 @@ int main(int argc, char const *argv[])
     int verticeOrigem;
     int verticeDestino;
     float peso;
-    char nomeArquivo[50];
-    FILE *arquivo;
+    char nomeArquivo[50],nomeArquivoSaida[50];
+
+    FILE *arquivo = NULL,*arquivoSaida = NULL;
 
 
 
@@ -48,6 +49,20 @@ int main(int argc, char const *argv[])
     }
     printf("\nGrafo final: \n");
     graphShow(grafo);
+
+    arquivoSaida = fopen("arquivoSaida.txt","w");
+
+    if (arquivoSaida == NULL){
+        printf("Erro na abebertura do arquivo.\n");
+    }
+
+    fprintf(arquivoSaida,"Orgem do grafo V(G): %d\n",n);
+    fprintf(arquivoSaida,"Tamanho do grafo E(G): %d\n",n);
+    fprintf(arquivoSaida,"Vizinhos do vertice %d:{x,3,x}\n",n);
+    fprintf(arquivoSaida,"Grau do vertice d(x%d): \n",n);
+
+    
+
 
     return 0;
 }

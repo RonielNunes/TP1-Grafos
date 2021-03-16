@@ -1,0 +1,4 @@
+Orgem do grafo V(G): 5
+Tamanho do grafo E(G): 5
+Vizinhos do vertice 5:{x,3,x}
+Grau do vertice d(x5): 
