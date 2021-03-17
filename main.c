@@ -6,6 +6,7 @@
 
 //gcc -o teste main.c ./sources/grafo.c ./sources/menu.c ./headers/grafo.h ./headers/menu.h
 //https://www.geeksforgeeks.org/graph-and-its-representations/
+
 int main(int argc, char const *argv[])
 {  
     int n,verticeOrigem, verticeDestino;
@@ -58,7 +59,7 @@ int main(int argc, char const *argv[])
     int vertice = 3;
     int grau = grauVertice(grafo,vertice);
     
-    fprintf(arquivoSaida,"Orgem do grafo V(G): %d\n",ordem);
+    fprintf(arquivoSaida,"Ordem do grafo V(G): %d\n",ordem);
     fprintf(arquivoSaida,"Tamanho do grafo E(G): %d\n",tamanho);
     fprintf(arquivoSaida,"Vizinhos do vertice %d: ",vertice);
     vizinhosVertice(grafo,vertice);
