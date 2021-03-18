@@ -47,7 +47,8 @@ int main(int argc, char const *argv[])
         fclose(arquivo);
     }
     printf("\nGrafo final: \n");
-    graphShow(grafo);
+   
+   graphShow(grafo);
 
     arquivoSaida = fopen("arquivoSaida.txt","w");
 
@@ -60,12 +61,23 @@ int main(int argc, char const *argv[])
     int vertice = 3;
     int grau = grauVertice(grafo,vertice);
     
-    fprintf(arquivoSaida,"Ordem do grafo V(G): %d\n",ordem);
-    fprintf(arquivoSaida,"Tamanho do grafo E(G): %d\n",tamanho);
-    fprintf(arquivoSaida,"Vizinhos do vertice %d: ",vertice);
-    vizinhosVertice(grafo,vertice);
-    fprintf(arquivoSaida,"\n");
-    fprintf(arquivoSaida,"Grau do vertice d(%d): %d\n",vertice,grau);
+    printf("=======================\n");
+    printf("E UMA ARTICULACAO %d ? %d\n",1,articulacaoVertice(grafo,1));
+    printf("E UMA ARTICULACAO %d ? %d\n",2,articulacaoVertice(grafo,2));
+    printf("E UMA ARTICULACAO %d ? %d\n",3,articulacaoVertice(grafo,3));
+    printf("E UMA ARTICULACAO %d ? %d\n",4,articulacaoVertice(grafo,4));
+    printf("E UMA ARTICULACAO %d ? %d\n",5,articulacaoVertice(grafo,5));
+    printf("E UMA ARTICULACAO %d ? %d\n",6,articulacaoVertice(grafo,6));
+    printf("E UMA ARTICULACAO %d ? %d\n",7,articulacaoVertice(grafo,7));
+
+    
+
+    // fprintf(arquivoSaida,"Ordem do grafo V(G): %d\n",ordem);
+    // fprintf(arquivoSaida,"Tamanho do grafo E(G): %d\n",tamanho);
+    // fprintf(arquivoSaida,"Vizinhos do vertice %d: ",vertice);
+    // vizinhosVertice(grafo,vertice);
+    // fprintf(arquivoSaida,"\n");
+    // fprintf(arquivoSaida,"Grau do vertice d(%d): %d\n",vertice,grau);
 
     
 
