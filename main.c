@@ -5,8 +5,9 @@
 #include <string.h>
 
 //gcc -o teste main.c ./sources/grafo.c ./sources/menu.c ./headers/grafo.h ./headers/menu.h
-//https://www.geeksforgeeks.org/graph-and-its-representations/
-
+//makefile windows simples
+// cmd: mingw32-make
+// cmd: exec
 int main(int argc, char const *argv[])
 {  
     int n,verticeOrigem, verticeDestino;
