@@ -1,3 +1,14 @@
+/*
+*   Programa: BIBLIOTECA GRAFOS
+*   Autor: Roniel Nunes Barbosa E COLOCAR NOME E COLOCAR NOME 
+*   Matéria: TEORIA E MODELO DE GRAFOS
+*   Professor: Marcus Henrique Soares Mendes
+*   Descrição:
+*             O objetivo do trabalho foi projetar e implementar uma 
+*        biblioteca para manipular grafos não direcionados ponderados.
+*   Data de conclusão: --/--/2021
+*/
+
 #include "./headers/menu.h"
 #include "./headers/grafo.h"
 #include <stdio.h>
