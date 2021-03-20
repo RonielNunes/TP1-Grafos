@@ -1,1 +1,2 @@
-//void readFile(int *n, int *verticeOrigem, int *verticeDestino, float *peso);
+void msgEntradaArquivo();
+void msgMenuSaida();

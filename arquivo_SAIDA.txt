@@ -1,0 +1,4 @@
+Ordem do grafo V(G): 5
+Tamanho do grafo E(G): 6
+Vizinhos do vertice 1:{ 5 2 }
+Grau do vertice d(X1): 2

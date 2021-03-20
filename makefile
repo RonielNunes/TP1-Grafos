@@ -1,4 +1,4 @@
 compile:
-		gcc -o exec main.c ./sources/grafo.c ./sources/menu.c ./headers/grafo.h ./headers/menu.h
+		gcc -o exec main.c ./headers/grafo.h ./sources/grafo.c ./headers/menu.h ./sources/menu.c
 run:
 		./exec
